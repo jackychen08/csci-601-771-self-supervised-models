@@ -1,0 +1,292 @@
+2023-03-13 00:32:40,032 INFO    StreamThr :57347 [internal.py:wandb_internal():87] W&B internal server running at pid: 57347, started at: 2023-03-13 00:32:40.031513
+2023-03-13 00:32:40,045 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: status
+2023-03-13 00:32:40,053 INFO    WriterThread:57347 [datastore.py:open_for_write():85] open: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/run-ten3i9oe.wandb
+2023-03-13 00:32:40,054 DEBUG   SenderThread:57347 [sender.py:send():336] send: header
+2023-03-13 00:32:40,058 DEBUG   SenderThread:57347 [sender.py:send():336] send: run
+2023-03-13 00:32:40,582 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: check_version
+2023-03-13 00:32:40,587 INFO    SenderThread:57347 [dir_watcher.py:__init__():219] watching files in: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files
+2023-03-13 00:32:40,587 INFO    SenderThread:57347 [sender.py:_start_run_threads():1078] run started: ten3i9oe with start time 1678681960.032017
+2023-03-13 00:32:40,587 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:40,587 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:40,588 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: check_version
+2023-03-13 00:32:40,635 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: run_start
+2023-03-13 00:32:40,638 DEBUG   HandlerThread:57347 [system_info.py:__init__():31] System info init
+2023-03-13 00:32:40,638 DEBUG   HandlerThread:57347 [system_info.py:__init__():46] System info init done
+2023-03-13 00:32:40,638 INFO    HandlerThread:57347 [system_monitor.py:start():183] Starting system monitor
+2023-03-13 00:32:40,639 INFO    SystemMonitor:57347 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2023-03-13 00:32:40,639 INFO    HandlerThread:57347 [system_monitor.py:probe():204] Collecting system info
+2023-03-13 00:32:40,641 INFO    SystemMonitor:57347 [interfaces.py:start():187] Started cpu monitoring
+2023-03-13 00:32:40,642 INFO    SystemMonitor:57347 [interfaces.py:start():187] Started disk monitoring
+2023-03-13 00:32:40,642 INFO    SystemMonitor:57347 [interfaces.py:start():187] Started gpu monitoring
+2023-03-13 00:32:40,643 INFO    SystemMonitor:57347 [interfaces.py:start():187] Started memory monitoring
+2023-03-13 00:32:40,643 INFO    SystemMonitor:57347 [interfaces.py:start():187] Started network monitoring
+2023-03-13 00:32:40,669 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:40,669 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:40,682 DEBUG   HandlerThread:57347 [system_info.py:probe():195] Probing system
+2023-03-13 00:32:40,697 DEBUG   HandlerThread:57347 [system_info.py:_probe_git():180] Probing git
+2023-03-13 00:32:40,716 DEBUG   HandlerThread:57347 [system_info.py:_probe_git():188] Probing git done
+2023-03-13 00:32:40,716 DEBUG   HandlerThread:57347 [system_info.py:probe():240] Probing system done
+2023-03-13 00:32:40,716 DEBUG   HandlerThread:57347 [system_monitor.py:probe():213] {'os': 'Linux-4.18.0-147.el8.x86_64-x86_64-with-glibc2.10', 'python': '3.8.3', 'heartbeatAt': '2023-03-13T04:32:40.682973', 'startedAt': '2023-03-13T04:32:40.023630', 'docker': None, 'cuda': None, 'args': ('--experiment', 'overfit', '--small_subset', '--device', 'cuda', '--model', 'distilbert-base-uncased', '--batch_size', '32', '--lr', '1e-4', '--num_epochs', '20'), 'state': 'running', 'program': 'classification.py', 'codePath': 'sp2023/hw6/classification.py', 'git': {'remote': 'git@github.com:jackychen08/csci-601-771-self-supervised-models.git', 'commit': '0b3446f3f4712129a0845525c6647e943cef0ec8'}, 'email': None, 'root': '/home/jchen291/classes/csci-601-771-self-supervised-models', 'host': 'icgpu02', 'username': 'jchen291', 'executable': '/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 2600.461796875, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2599.997, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.002, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2587.5, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2599.997, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2599.997, 'min': 0.0, 'max': 0.0}, {'current': 2599.997, 'min': 0.0, 'max': 0.0}, {'current': 2588.444, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2601.651, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2612.745, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2612.871, 'min': 0.0, 'max': 0.0}, {'current': 2587.254, 'min': 0.0, 'max': 0.0}, {'current': 2590.51, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2609.629, 'min': 0.0, 'max': 0.0}, {'current': 2609.027, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2610.196, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2609.027, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2609.42, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2609.252, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2608.36, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2592.121, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2591.558, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 1473.2021865844727, 'used': 29.775245666503906}, 'gpu': 'Graphics Device', 'gpu_count': 4, 'gpu_devices': [{'name': 'Graphics Device', 'memory_total': 85198045184}, {'name': 'Graphics Device', 'memory_total': 85198045184}, {'name': 'Graphics Device', 'memory_total': 85198045184}, {'name': 'Graphics Device', 'memory_total': 85198045184}], 'memory': {'total': 251.56224822998047}}
+2023-03-13 00:32:40,717 INFO    HandlerThread:57347 [system_monitor.py:probe():214] Finished collecting system info
+2023-03-13 00:32:40,717 INFO    HandlerThread:57347 [system_monitor.py:probe():217] Publishing system info
+2023-03-13 00:32:40,717 DEBUG   HandlerThread:57347 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-13 00:32:40,717 DEBUG   HandlerThread:57347 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-13 00:32:40,717 DEBUG   HandlerThread:57347 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-13 00:32:41,589 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/conda-environment.yaml
+2023-03-13 00:32:41,589 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-summary.json
+2023-03-13 00:32:41,589 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/requirements.txt
+2023-03-13 00:32:41,915 DEBUG   HandlerThread:57347 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-13 00:32:41,916 INFO    HandlerThread:57347 [system_monitor.py:probe():219] Finished publishing system info
+2023-03-13 00:32:41,919 DEBUG   SenderThread:57347 [sender.py:send():336] send: files
+2023-03-13 00:32:41,919 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2023-03-13 00:32:41,928 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-13 00:32:41,928 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: stop_status
+2023-03-13 00:32:42,003 DEBUG   SenderThread:57347 [sender.py:send():336] send: telemetry
+2023-03-13 00:32:42,245 INFO    wandb-upload_0:57347 [upload_job.py:push():138] Uploaded file /tmp/tmpr4q5ommqwandb/yg2z76mq-wandb-metadata.json
+2023-03-13 00:32:42,588 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-metadata.json
+2023-03-13 00:32:42,588 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_created():278] file/dir created: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/output.log
+2023-03-13 00:32:42,694 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:42,694 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:44,589 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/output.log
+2023-03-13 00:32:44,725 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:44,725 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:45,314 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: status_report
+2023-03-13 00:32:45,469 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:45,470 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:45,470 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:45,471 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:45,589 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-summary.json
+2023-03-13 00:32:45,926 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:45,927 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:45,927 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:45,927 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:46,387 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:46,388 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:46,388 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:46,388 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:46,590 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-summary.json
+2023-03-13 00:32:46,590 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/output.log
+2023-03-13 00:32:46,745 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:46,745 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:46,870 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:46,870 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:46,870 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:46,871 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:47,329 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:47,330 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:47,330 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:47,330 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:47,590 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-summary.json
+2023-03-13 00:32:47,778 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:47,779 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:47,779 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:47,779 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:48,240 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:48,241 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:48,241 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:48,241 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:48,590 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-summary.json
+2023-03-13 00:32:48,591 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/output.log
+2023-03-13 00:32:48,700 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:48,700 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:48,700 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:48,700 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:48,765 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:48,765 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:49,167 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:49,167 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:49,167 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:49,168 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:49,591 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-summary.json
+2023-03-13 00:32:49,624 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:49,625 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:49,625 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:49,625 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:50,066 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:50,067 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:50,067 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:50,067 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:50,372 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: status_report
+2023-03-13 00:32:50,543 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:50,543 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:50,544 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:50,544 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:50,591 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-summary.json
+2023-03-13 00:32:50,591 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/output.log
+2023-03-13 00:32:50,790 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:50,790 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:51,003 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:51,003 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:51,003 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:51,004 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:51,472 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:51,472 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:51,472 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:51,473 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:51,592 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-summary.json
+2023-03-13 00:32:51,923 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:51,923 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:51,923 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:51,924 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:52,406 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:52,407 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:52,407 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:52,407 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:52,592 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-summary.json
+2023-03-13 00:32:52,592 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/output.log
+2023-03-13 00:32:52,822 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:52,822 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:52,869 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:52,869 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:52,869 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:52,869 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:53,328 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:53,329 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:53,329 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:53,329 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:53,592 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-summary.json
+2023-03-13 00:32:53,788 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:53,788 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:53,788 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:53,788 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:54,244 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-13 00:32:54,245 DEBUG   SenderThread:57347 [sender.py:send():336] send: history
+2023-03-13 00:32:54,245 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: summary_record
+2023-03-13 00:32:54,245 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:54,593 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-summary.json
+2023-03-13 00:32:54,593 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/output.log
+2023-03-13 00:32:54,950 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:54,950 ERROR   gpu       :57347 [interfaces.py:monitor():141] Failed to sample metric: Not Supported
+2023-03-13 00:32:55,465 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: status_report
+2023-03-13 00:32:55,632 DEBUG   SenderThread:57347 [sender.py:send():336] send: exit
+2023-03-13 00:32:55,633 INFO    SenderThread:57347 [sender.py:send_exit():559] handling exit code: 0
+2023-03-13 00:32:55,633 INFO    SenderThread:57347 [sender.py:send_exit():561] handling runtime: 14
+2023-03-13 00:32:55,633 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:55,633 INFO    SenderThread:57347 [sender.py:send_exit():567] send defer
+2023-03-13 00:32:55,633 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: defer
+2023-03-13 00:32:55,633 INFO    HandlerThread:57347 [handler.py:handle_request_defer():170] handle defer: 0
+2023-03-13 00:32:55,633 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: defer
+2023-03-13 00:32:55,634 INFO    SenderThread:57347 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-03-13 00:32:55,634 INFO    SenderThread:57347 [sender.py:transition_state():587] send defer: 1
+2023-03-13 00:32:55,634 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: defer
+2023-03-13 00:32:55,634 INFO    HandlerThread:57347 [handler.py:handle_request_defer():170] handle defer: 1
+2023-03-13 00:32:55,634 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: defer
+2023-03-13 00:32:55,634 INFO    SenderThread:57347 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-03-13 00:32:55,634 INFO    SenderThread:57347 [sender.py:transition_state():587] send defer: 2
+2023-03-13 00:32:55,634 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: defer
+2023-03-13 00:32:55,634 INFO    HandlerThread:57347 [handler.py:handle_request_defer():170] handle defer: 2
+2023-03-13 00:32:55,634 INFO    HandlerThread:57347 [system_monitor.py:finish():193] Stopping system monitor
+2023-03-13 00:32:55,634 DEBUG   SystemMonitor:57347 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2023-03-13 00:32:55,634 DEBUG   SystemMonitor:57347 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2023-03-13 00:32:55,634 DEBUG   SystemMonitor:57347 [system_monitor.py:_start():172] Publishing last batch of metrics
+2023-03-13 00:32:55,642 INFO    HandlerThread:57347 [interfaces.py:finish():199] Joined cpu monitor
+2023-03-13 00:32:55,642 INFO    HandlerThread:57347 [interfaces.py:finish():199] Joined disk monitor
+2023-03-13 00:32:55,798 INFO    HandlerThread:57347 [interfaces.py:finish():199] Joined gpu monitor
+2023-03-13 00:32:55,798 INFO    HandlerThread:57347 [interfaces.py:finish():199] Joined memory monitor
+2023-03-13 00:32:55,798 INFO    HandlerThread:57347 [interfaces.py:finish():199] Joined network monitor
+2023-03-13 00:32:55,798 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: defer
+2023-03-13 00:32:55,798 INFO    SenderThread:57347 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-03-13 00:32:55,798 INFO    SenderThread:57347 [sender.py:transition_state():587] send defer: 3
+2023-03-13 00:32:55,798 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: defer
+2023-03-13 00:32:55,798 INFO    HandlerThread:57347 [handler.py:handle_request_defer():170] handle defer: 3
+2023-03-13 00:32:55,798 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: defer
+2023-03-13 00:32:55,798 INFO    SenderThread:57347 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-03-13 00:32:55,798 INFO    SenderThread:57347 [sender.py:transition_state():587] send defer: 4
+2023-03-13 00:32:55,799 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: defer
+2023-03-13 00:32:55,799 INFO    HandlerThread:57347 [handler.py:handle_request_defer():170] handle defer: 4
+2023-03-13 00:32:55,799 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: defer
+2023-03-13 00:32:55,799 INFO    SenderThread:57347 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-03-13 00:32:55,799 INFO    SenderThread:57347 [sender.py:transition_state():587] send defer: 5
+2023-03-13 00:32:55,799 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: defer
+2023-03-13 00:32:55,799 INFO    HandlerThread:57347 [handler.py:handle_request_defer():170] handle defer: 5
+2023-03-13 00:32:55,799 DEBUG   SenderThread:57347 [sender.py:send():336] send: summary
+2023-03-13 00:32:55,799 INFO    SenderThread:57347 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2023-03-13 00:32:55,800 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: defer
+2023-03-13 00:32:55,800 INFO    SenderThread:57347 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-03-13 00:32:55,800 INFO    SenderThread:57347 [sender.py:transition_state():587] send defer: 6
+2023-03-13 00:32:55,800 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: defer
+2023-03-13 00:32:55,800 INFO    HandlerThread:57347 [handler.py:handle_request_defer():170] handle defer: 6
+2023-03-13 00:32:55,800 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: defer
+2023-03-13 00:32:55,800 INFO    SenderThread:57347 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-03-13 00:32:55,804 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: status_report
+2023-03-13 00:32:55,897 INFO    SenderThread:57347 [sender.py:transition_state():587] send defer: 7
+2023-03-13 00:32:55,897 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: defer
+2023-03-13 00:32:55,897 INFO    HandlerThread:57347 [handler.py:handle_request_defer():170] handle defer: 7
+2023-03-13 00:32:55,897 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: defer
+2023-03-13 00:32:55,897 INFO    SenderThread:57347 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-03-13 00:32:56,594 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/config.yaml
+2023-03-13 00:32:56,594 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-summary.json
+2023-03-13 00:32:56,594 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/output.log
+2023-03-13 00:32:56,633 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-13 00:32:58,246 INFO    SenderThread:57347 [sender.py:transition_state():587] send defer: 8
+2023-03-13 00:32:58,246 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: poll_exit
+2023-03-13 00:32:58,246 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: defer
+2023-03-13 00:32:58,246 INFO    HandlerThread:57347 [handler.py:handle_request_defer():170] handle defer: 8
+2023-03-13 00:32:58,247 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: defer
+2023-03-13 00:32:58,247 INFO    SenderThread:57347 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-03-13 00:32:58,250 INFO    SenderThread:57347 [sender.py:transition_state():587] send defer: 9
+2023-03-13 00:32:58,251 DEBUG   SenderThread:57347 [sender.py:send():336] send: artifact
+2023-03-13 00:32:58,251 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: defer
+2023-03-13 00:32:58,253 INFO    HandlerThread:57347 [handler.py:handle_request_defer():170] handle defer: 9
+2023-03-13 00:32:58,594 INFO    Thread-13 :57347 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/output.log
+2023-03-13 00:32:58,835 INFO    wandb-upload_0:57347 [upload_job.py:push():93] Skipped uploading /home/jchen291/.local/share/wandb/artifacts/staging/tmp7ns5gwut
+2023-03-13 00:32:59,034 INFO    wandb-upload_1:57347 [upload_job.py:push():96] Uploaded file /home/jchen291/.local/share/wandb/artifacts/staging/tmpymth8uo7
+2023-03-13 00:32:59,885 INFO    SenderThread:57347 [sender.py:send_artifact():1428] sent artifact job-git_github.com_jackychen08_csci-601-771-self-supervised-models.git_sp2023_hw6_classification.py - {'id': 'QXJ0aWZhY3Q6Mzk1NTA5Mzc3', 'digest': '0ad38dc656e1043e24f7a14e765815b8', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU2ODYwOTQ1', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Mzk1NTA3OTEy', 'versionIndex': 1}}, 'version': 'latest'}
+2023-03-13 00:32:59,885 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: defer
+2023-03-13 00:32:59,885 INFO    SenderThread:57347 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-03-13 00:32:59,885 INFO    SenderThread:57347 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-03-13 00:33:00,595 INFO    SenderThread:57347 [dir_watcher.py:finish():395] scan: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files
+2023-03-13 00:33:00,595 INFO    SenderThread:57347 [dir_watcher.py:finish():409] scan save: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/conda-environment.yaml conda-environment.yaml
+2023-03-13 00:33:00,595 INFO    SenderThread:57347 [dir_watcher.py:finish():409] scan save: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-metadata.json wandb-metadata.json
+2023-03-13 00:33:00,595 INFO    SenderThread:57347 [dir_watcher.py:finish():409] scan save: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/output.log output.log
+2023-03-13 00:33:00,596 INFO    SenderThread:57347 [dir_watcher.py:finish():409] scan save: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/config.yaml config.yaml
+2023-03-13 00:33:00,599 INFO    SenderThread:57347 [dir_watcher.py:finish():409] scan save: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-summary.json wandb-summary.json
+2023-03-13 00:33:00,602 INFO    SenderThread:57347 [dir_watcher.py:finish():409] scan save: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/requirements.txt requirements.txt
+2023-03-13 00:33:00,602 INFO    SenderThread:57347 [sender.py:transition_state():587] send defer: 10
+2023-03-13 00:33:00,602 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: defer
+2023-03-13 00:33:00,602 INFO    HandlerThread:57347 [handler.py:handle_request_defer():170] handle defer: 10
+2023-03-13 00:33:00,602 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: defer
+2023-03-13 00:33:00,602 INFO    SenderThread:57347 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-03-13 00:33:00,602 INFO    SenderThread:57347 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-13 00:33:00,923 INFO    wandb-upload_0:57347 [upload_job.py:push():138] Uploaded file /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/output.log
+2023-03-13 00:33:00,931 INFO    wandb-upload_2:57347 [upload_job.py:push():138] Uploaded file /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/wandb-summary.json
+2023-03-13 00:33:00,934 INFO    wandb-upload_3:57347 [upload_job.py:push():138] Uploaded file /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/requirements.txt
+2023-03-13 00:33:00,953 INFO    wandb-upload_1:57347 [upload_job.py:push():138] Uploaded file /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/files/config.yaml
+2023-03-13 00:33:01,153 INFO    Thread-12 :57347 [sender.py:transition_state():587] send defer: 11
+2023-03-13 00:33:01,153 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: defer
+2023-03-13 00:33:01,153 INFO    HandlerThread:57347 [handler.py:handle_request_defer():170] handle defer: 11
+2023-03-13 00:33:01,153 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: defer
+2023-03-13 00:33:01,153 INFO    SenderThread:57347 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-03-13 00:33:01,153 INFO    SenderThread:57347 [file_pusher.py:join():169] waiting for file pusher
+2023-03-13 00:33:01,154 INFO    SenderThread:57347 [sender.py:transition_state():587] send defer: 12
+2023-03-13 00:33:01,154 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: defer
+2023-03-13 00:33:01,154 INFO    HandlerThread:57347 [handler.py:handle_request_defer():170] handle defer: 12
+2023-03-13 00:33:01,154 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: defer
+2023-03-13 00:33:01,154 INFO    SenderThread:57347 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-03-13 00:33:01,228 INFO    SenderThread:57347 [sender.py:transition_state():587] send defer: 13
+2023-03-13 00:33:01,228 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: defer
+2023-03-13 00:33:01,228 INFO    HandlerThread:57347 [handler.py:handle_request_defer():170] handle defer: 13
+2023-03-13 00:33:01,228 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: defer
+2023-03-13 00:33:01,228 INFO    SenderThread:57347 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-03-13 00:33:01,228 INFO    SenderThread:57347 [sender.py:transition_state():587] send defer: 14
+2023-03-13 00:33:01,228 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: defer
+2023-03-13 00:33:01,228 INFO    HandlerThread:57347 [handler.py:handle_request_defer():170] handle defer: 14
+2023-03-13 00:33:01,228 DEBUG   SenderThread:57347 [sender.py:send():336] send: final
+2023-03-13 00:33:01,228 DEBUG   SenderThread:57347 [sender.py:send():336] send: footer
+2023-03-13 00:33:01,228 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: defer
+2023-03-13 00:33:01,228 INFO    SenderThread:57347 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-03-13 00:33:01,229 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-13 00:33:01,229 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: server_info
+2023-03-13 00:33:01,229 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: get_summary
+2023-03-13 00:33:01,229 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: sampled_history
+2023-03-13 00:33:01,230 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: poll_exit
+2023-03-13 00:33:01,230 DEBUG   SenderThread:57347 [sender.py:send_request():363] send_request: server_info
+2023-03-13 00:33:01,312 INFO    MainThread:57347 [wandb_run.py:_footer_history_summary_info():3429] rendering history
+2023-03-13 00:33:01,312 INFO    MainThread:57347 [wandb_run.py:_footer_history_summary_info():3461] rendering summary
+2023-03-13 00:33:01,312 INFO    MainThread:57347 [wandb_run.py:_footer_sync_info():3387] logging synced files
+2023-03-13 00:33:01,312 DEBUG   HandlerThread:57347 [handler.py:handle_request():144] handle_request: shutdown
+2023-03-13 00:33:01,312 INFO    HandlerThread:57347 [handler.py:finish():842] shutting down handler
+2023-03-13 00:33:02,230 INFO    WriterThread:57347 [datastore.py:close():298] close: /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_003240-ten3i9oe/run-ten3i9oe.wandb
+2023-03-13 00:33:02,313 INFO    SenderThread:57347 [sender.py:finish():1504] shutting down sender
+2023-03-13 00:33:02,313 INFO    SenderThread:57347 [file_pusher.py:finish():164] shutting down file pusher
+2023-03-13 00:33:02,313 INFO    SenderThread:57347 [file_pusher.py:join():169] waiting for file pusher

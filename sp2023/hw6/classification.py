@@ -8,6 +8,7 @@ from transformers import get_scheduler
 from transformers import AutoModelForSequenceClassification
 import argparse
 import subprocess
+import wandb
 
 
 def print_gpu_memory():
@@ -126,7 +127,7 @@ def train(mymodel, num_epochs, train_dataloader, validation_dataloader, device, 
         num_training_steps=len(train_dataloader) * num_epochs
     )
 
-    loss = torch.nn.CrossEntropyLoss()
+    loss_fnc = torch.nn.CrossEntropyLoss()
 
     for epoch in range(num_epochs):
 
@@ -153,15 +154,20 @@ def train(mymodel, num_epochs, train_dataloader, validation_dataloader, device, 
             Then, call optimizer.zero_grad() to reset the gradients for the next iteration.
             Then, compute the accuracy using the logits and the labels.
             """
+            #TODO get input_ids, attention_mask, and labels from the batch
+            input_ids = batch['input_ids'].to(device)
+            attention_mask = batch['attention_mask'].to(device)
+            labels = batch['labels'].to(device)
+            #apply the attantion mask to the input ids
+            inputs = input_ids * attention_mask
+        
+            predictions = mymodel(inputs).logits
+            loss = loss_fnc(predictions, labels)
 
-            input_ids = ...
-            attention_mask = ...
-
-            output = mymodel(...)
-            predictions = ...
-            model_loss = loss(...)
-
-            ...
+            loss.backward()
+            optimizer.step()
+            lr_scheduler.step()
+            optimizer.zero_grad()
 
             predictions = torch.argmax(predictions, dim=1)
 
@@ -169,12 +175,17 @@ def train(mymodel, num_epochs, train_dataloader, validation_dataloader, device, 
             train_accuracy.add_batch(predictions=predictions, references=batch['labels'])
 
         # print evaluation metrics
+        train_acc_float = train_accuracy.compute()["accuracy"]
         print(f" ===> Epoch {epoch + 1}")
-        print(f" - Average training metrics: accuracy={train_accuracy.compute()}")
+        print(f" - Average training metrics: accuracy={train_acc_float}")
 
         # normally, validation would be more useful when training for many epochs
         val_accuracy = evaluate_model(mymodel, validation_dataloader, device)
         print(f" - Average validation metrics: accuracy={val_accuracy}")
+
+        #log the metrics
+        wandb.log({"train_accuracy": train_acc_float,"val_accuracy": val_accuracy["accuracy"]})
+        # "val_accuracy": val_accuracy["accuracy"]})
 
 
 def pre_process(model_name, batch_size, device, small_subset):
@@ -261,6 +272,13 @@ if __name__ == "__main__":
 
     assert type(args.small_subset) == bool, "small_subset must be a boolean"
 
+    wandb.init(project="boolq", name=args.experiment,config={
+        "lr": args.lr,
+        "batch_size": args.batch_size,
+        "epochs": args.num_epochs,
+        "model": args.model
+    })
+
     # load the data and models
     pretrained_model, train_dataloader, validation_dataloader, test_dataloader = pre_process(args.model,
                                                                                              args.batch_size,
@@ -268,13 +286,13 @@ if __name__ == "__main__":
                                                                                              args.small_subset)
 
     print(" >>>>>>>>  Starting training ... ")
-    train(...)
+    train(pretrained_model,args.num_epochs,train_dataloader,validation_dataloader,args.device,args.lr)
 
     # print the GPU memory usage just to make sure things are alright
     print_gpu_memory()
 
-    val_accuracy = ...
+    val_accuracy = evaluate_model(pretrained_model, validation_dataloader, args.device)
     print(f" - Average DEV metrics: accuracy={val_accuracy}")
 
-    test_accuracy = ...
+    test_accuracy = evaluate_model(pretrained_model, test_dataloader, args.device)
     print(f" - Average TEST metrics: accuracy={test_accuracy}")

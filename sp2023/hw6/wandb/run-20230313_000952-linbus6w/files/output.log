@@ -1,0 +1,54 @@
+Loading the dataset ...
+Slicing the data...
+Size of the loaded dataset:
+ - train: 10
+ - dev: 10
+ - test: 10
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ...
+Loading the model ...
+Moving model to device ...cuda
+Found cached dataset boolq (/home/jchen291/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+100%|██████████| 2/2 [00:00<00:00, 691.05it/s]
+Some weights of the model checkpoint at distilbert-base-uncased were not used when initializing DistilBertForSequenceClassification: ['vocab_layer_norm.bias', 'vocab_transform.weight', 'vocab_layer_norm.weight', 'vocab_transform.bias', 'vocab_projector.weight', 'vocab_projector.bias']
+- This IS expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'pre_classifier.weight', 'pre_classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+ >>>>>>>>  Starting training ...
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy={'accuracy': 0.6}
+ - Average validation metrics: accuracy={'accuracy': 0.4}
+Traceback (most recent call last):
+  File "classification.py", line 287, in <module>
+    train(pretrained_model,args.num_epochs,train_dataloader,validation_dataloader,args.device,args.lr)
+  File "classification.py", line 186, in train
+    wandb.log({"train_accuracy": train_accuracy, "val_accuracy": val_accuracy})
+  File "/home/jchen291/.local/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 368, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 331, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1712, in log
+    self._log(data=data, step=step, commit=commit)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1494, in _log
+    self._partial_history_callback(data, step, commit)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1364, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 579, in publish_partial_history
+    item.value_json = json_dumps_safer_history(v)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/wandb/util.py", line 968, in json_dumps_safer_history
+    return json.dumps(obj, cls=WandBHistoryJSONEncoder, **kwargs)
+  File "/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/wandb/util.py", line 933, in default
+    return json.JSONEncoder.default(self, obj)
+  File "/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Accuracy is not JSON serializable
