@@ -1,0 +1,390 @@
+{
+    "os": "Linux-4.18.0-147.el8.x86_64-x86_64-with-glibc2.10",
+    "python": "3.8.3",
+    "heartbeatAt": "2023-03-13T09:03:44.835089",
+    "startedAt": "2023-03-13T09:03:44.509617",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--experiment",
+        "roberta-base_grid_search",
+        "--device",
+        "cuda",
+        "--model",
+        "roberta-base",
+        "--batch_size",
+        "64",
+        "--lr",
+        "5e-4",
+        "--num_epochs",
+        "7"
+    ],
+    "state": "running",
+    "program": "classification.py",
+    "codePath": "sp2023/hw6/classification.py",
+    "git": {
+        "remote": "git@github.com:jackychen08/csci-601-771-self-supervised-models.git",
+        "commit": "fa9e3ce6ef4935405ae101a8da35f0d0037502ed"
+    },
+    "email": null,
+    "root": "/home/jchen291/classes/csci-601-771-self-supervised-models",
+    "host": "icgpu02",
+    "username": "jchen291",
+    "executable": "/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/bin/python",
+    "cpu_count": 32,
+    "cpu_count_logical": 64,
+    "cpu_freq": {
+        "current": 2598.8171875,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2600.481,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2599.997,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2599.333,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2586.597,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2586.802,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2587.378,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2613.684,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2613.978,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2588.596,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.255,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2587.378,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2588.181,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2587.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2590.94,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2591.798,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2609.09,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2609.352,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2591.126,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2609.219,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2590.545,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2609.737,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2590.225,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2590.647,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2590.714,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2609.737,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2590.51,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2600.0,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 1473.2021865844727,
+        "used": 29.654766082763672
+    },
+    "gpu": "Graphics Device",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "Graphics Device",
+            "memory_total": 85198045184
+        },
+        {
+            "name": "Graphics Device",
+            "memory_total": 85198045184
+        },
+        {
+            "name": "Graphics Device",
+            "memory_total": 85198045184
+        },
+        {
+            "name": "Graphics Device",
+            "memory_total": 85198045184
+        }
+    ],
+    "memory": {
+        "total": 251.56224822998047
+    }
+}

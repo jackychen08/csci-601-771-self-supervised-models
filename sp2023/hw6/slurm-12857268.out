@@ -1,0 +1,1140 @@
+Could not find conda environment: toy_classification_env
+You can list all discoverable environments with `conda info --envs`.
+
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: scikit-learn==0.24.2 in /home/jchen291/.local/lib/python3.8/site-packages (from -r requirements.txt (line 1)) (0.24.2)
+Requirement already satisfied: tqdm==4.64.1 in /home/jchen291/.local/lib/python3.8/site-packages (from -r requirements.txt (line 2)) (4.64.1)
+Requirement already satisfied: transformers==4.26.1 in /home/jchen291/.local/lib/python3.8/site-packages (from -r requirements.txt (line 3)) (4.26.1)
+Requirement already satisfied: datasets==2.10.0 in /home/jchen291/.local/lib/python3.8/site-packages (from -r requirements.txt (line 4)) (2.10.0)
+Requirement already satisfied: evaluate==0.4.0 in /home/jchen291/.local/lib/python3.8/site-packages (from -r requirements.txt (line 5)) (0.4.0)
+Requirement already satisfied: torch==1.13.1 in /home/jchen291/.local/lib/python3.8/site-packages (from -r requirements.txt (line 6)) (1.13.1)
+Requirement already satisfied: wandb in /home/jchen291/.local/lib/python3.8/site-packages (from -r requirements.txt (line 7)) (0.13.11)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from scikit-learn==0.24.2->-r requirements.txt (line 1)) (2.1.0)
+Requirement already satisfied: joblib>=0.11 in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from scikit-learn==0.24.2->-r requirements.txt (line 1)) (0.16.0)
+Requirement already satisfied: numpy>=1.13.3 in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from scikit-learn==0.24.2->-r requirements.txt (line 1)) (1.18.5)
+Requirement already satisfied: scipy>=0.19.1 in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from scikit-learn==0.24.2->-r requirements.txt (line 1)) (1.5.0)
+Requirement already satisfied: packaging>=20.0 in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from transformers==4.26.1->-r requirements.txt (line 3)) (20.4)
+Requirement already satisfied: huggingface-hub<1.0,>=0.11.0 in /home/jchen291/.local/lib/python3.8/site-packages (from transformers==4.26.1->-r requirements.txt (line 3)) (0.13.1)
+Requirement already satisfied: regex!=2019.12.17 in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from transformers==4.26.1->-r requirements.txt (line 3)) (2020.6.8)
+Requirement already satisfied: filelock in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from transformers==4.26.1->-r requirements.txt (line 3)) (3.0.12)
+Requirement already satisfied: pyyaml>=5.1 in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from transformers==4.26.1->-r requirements.txt (line 3)) (5.3.1)
+Requirement already satisfied: tokenizers!=0.11.3,<0.14,>=0.11.1 in /home/jchen291/.local/lib/python3.8/site-packages (from transformers==4.26.1->-r requirements.txt (line 3)) (0.13.2)
+Requirement already satisfied: requests in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from transformers==4.26.1->-r requirements.txt (line 3)) (2.24.0)
+Requirement already satisfied: pandas in /home/jchen291/.local/lib/python3.8/site-packages (from datasets==2.10.0->-r requirements.txt (line 4)) (1.4.3)
+Requirement already satisfied: aiohttp in /home/jchen291/.local/lib/python3.8/site-packages (from datasets==2.10.0->-r requirements.txt (line 4)) (3.8.4)
+Requirement already satisfied: multiprocess in /home/jchen291/.local/lib/python3.8/site-packages (from datasets==2.10.0->-r requirements.txt (line 4)) (0.70.14)
+Requirement already satisfied: dill<0.3.7,>=0.3.0 in /home/jchen291/.local/lib/python3.8/site-packages (from datasets==2.10.0->-r requirements.txt (line 4)) (0.3.6)
+Requirement already satisfied: pyarrow>=6.0.0 in /home/jchen291/.local/lib/python3.8/site-packages (from datasets==2.10.0->-r requirements.txt (line 4)) (11.0.0)
+Requirement already satisfied: xxhash in /home/jchen291/.local/lib/python3.8/site-packages (from datasets==2.10.0->-r requirements.txt (line 4)) (3.2.0)
+Requirement already satisfied: fsspec[http]>=2021.11.1 in /home/jchen291/.local/lib/python3.8/site-packages (from datasets==2.10.0->-r requirements.txt (line 4)) (2023.3.0)
+Requirement already satisfied: responses<0.19 in /home/jchen291/.local/lib/python3.8/site-packages (from datasets==2.10.0->-r requirements.txt (line 4)) (0.18.0)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu11==11.7.99; platform_system == "Linux" in /home/jchen291/.local/lib/python3.8/site-packages (from torch==1.13.1->-r requirements.txt (line 6)) (11.7.99)
+Requirement already satisfied: nvidia-cuda-runtime-cu11==11.7.99; platform_system == "Linux" in /home/jchen291/.local/lib/python3.8/site-packages (from torch==1.13.1->-r requirements.txt (line 6)) (11.7.99)
+Requirement already satisfied: nvidia-cublas-cu11==11.10.3.66; platform_system == "Linux" in /home/jchen291/.local/lib/python3.8/site-packages (from torch==1.13.1->-r requirements.txt (line 6)) (11.10.3.66)
+Requirement already satisfied: nvidia-cudnn-cu11==8.5.0.96; platform_system == "Linux" in /home/jchen291/.local/lib/python3.8/site-packages (from torch==1.13.1->-r requirements.txt (line 6)) (8.5.0.96)
+Requirement already satisfied: typing-extensions in /home/jchen291/.local/lib/python3.8/site-packages (from torch==1.13.1->-r requirements.txt (line 6)) (4.5.0)
+Requirement already satisfied: psutil>=5.0.0 in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from wandb->-r requirements.txt (line 7)) (5.7.0)
+Requirement already satisfied: GitPython!=3.1.29,>=1.0.0 in /home/jchen291/.local/lib/python3.8/site-packages (from wandb->-r requirements.txt (line 7)) (3.1.31)
+Requirement already satisfied: appdirs>=1.4.3 in /home/jchen291/.local/lib/python3.8/site-packages (from wandb->-r requirements.txt (line 7)) (1.4.4)
+Requirement already satisfied: Click!=8.0.0,>=7.0 in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from wandb->-r requirements.txt (line 7)) (7.1.2)
+Requirement already satisfied: docker-pycreds>=0.4.0 in /home/jchen291/.local/lib/python3.8/site-packages (from wandb->-r requirements.txt (line 7)) (0.4.0)
+Requirement already satisfied: setuptools in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from wandb->-r requirements.txt (line 7)) (49.2.0.post20200714)
+Requirement already satisfied: setproctitle in /home/jchen291/.local/lib/python3.8/site-packages (from wandb->-r requirements.txt (line 7)) (1.3.2)
+Requirement already satisfied: sentry-sdk>=1.0.0 in /home/jchen291/.local/lib/python3.8/site-packages (from wandb->-r requirements.txt (line 7)) (1.16.0)
+Requirement already satisfied: protobuf!=4.21.0,<5,>=3.12.0; python_version < "3.9" and sys_platform == "linux" in /home/jchen291/.local/lib/python3.8/site-packages (from wandb->-r requirements.txt (line 7)) (4.22.1)
+Requirement already satisfied: pathtools in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from wandb->-r requirements.txt (line 7)) (0.1.2)
+Requirement already satisfied: pyparsing>=2.0.2 in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from packaging>=20.0->transformers==4.26.1->-r requirements.txt (line 3)) (2.4.7)
+Requirement already satisfied: six in /home/jchen291/.local/lib/python3.8/site-packages (from packaging>=20.0->transformers==4.26.1->-r requirements.txt (line 3)) (1.16.0)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from requests->transformers==4.26.1->-r requirements.txt (line 3)) (1.25.9)
+Requirement already satisfied: idna<3,>=2.5 in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from requests->transformers==4.26.1->-r requirements.txt (line 3)) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from requests->transformers==4.26.1->-r requirements.txt (line 3)) (2020.6.20)
+Requirement already satisfied: chardet<4,>=3.0.2 in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from requests->transformers==4.26.1->-r requirements.txt (line 3)) (3.0.4)
+Requirement already satisfied: pytz>=2020.1 in /home/jchen291/.local/lib/python3.8/site-packages (from pandas->datasets==2.10.0->-r requirements.txt (line 4)) (2022.1)
+Requirement already satisfied: python-dateutil>=2.8.1 in /home/jchen291/.local/lib/python3.8/site-packages (from pandas->datasets==2.10.0->-r requirements.txt (line 4)) (2.8.2)
+Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /home/jchen291/.local/lib/python3.8/site-packages (from aiohttp->datasets==2.10.0->-r requirements.txt (line 4)) (4.0.2)
+Requirement already satisfied: charset-normalizer<4.0,>=2.0 in /home/jchen291/.local/lib/python3.8/site-packages (from aiohttp->datasets==2.10.0->-r requirements.txt (line 4)) (3.1.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/jchen291/.local/lib/python3.8/site-packages (from aiohttp->datasets==2.10.0->-r requirements.txt (line 4)) (1.3.3)
+Requirement already satisfied: aiosignal>=1.1.2 in /home/jchen291/.local/lib/python3.8/site-packages (from aiohttp->datasets==2.10.0->-r requirements.txt (line 4)) (1.3.1)
+Requirement already satisfied: attrs>=17.3.0 in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from aiohttp->datasets==2.10.0->-r requirements.txt (line 4)) (19.3.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /home/jchen291/.local/lib/python3.8/site-packages (from aiohttp->datasets==2.10.0->-r requirements.txt (line 4)) (6.0.4)
+Requirement already satisfied: yarl<2.0,>=1.0 in /home/jchen291/.local/lib/python3.8/site-packages (from aiohttp->datasets==2.10.0->-r requirements.txt (line 4)) (1.8.2)
+Requirement already satisfied: wheel in /data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages (from nvidia-cuda-runtime-cu11==11.7.99; platform_system == "Linux"->torch==1.13.1->-r requirements.txt (line 6)) (0.34.2)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /home/jchen291/.local/lib/python3.8/site-packages (from GitPython!=3.1.29,>=1.0.0->wandb->-r requirements.txt (line 7)) (4.0.10)
+Requirement already satisfied: smmap<6,>=3.0.1 in /home/jchen291/.local/lib/python3.8/site-packages (from gitdb<5,>=4.0.1->GitPython!=3.1.29,>=1.0.0->wandb->-r requirements.txt (line 7)) (5.0.0)
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Currently logged in as: jc200108 (jacky291). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.13.11
+wandb: Run data is saved locally in /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_011410-9i8eoo04
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run bert-base-cased_grid_search
+wandb: ⭐️ View project at https://wandb.ai/jacky291/boolq
+wandb: 🚀 View run at https://wandb.ai/jacky291/boolq/runs/9i8eoo04
+Found cached dataset boolq (/home/jchen291/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Specified arguments: Namespace(batch_size=32, device='cuda', experiment='bert-base-cased_grid_search', lr=0.0001, model='bert-base-cased', num_epochs=5, small_subset=False)
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 682.94it/s]
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Downloading (…)okenizer_config.json:   0%|          | 0.00/29.0 [00:00<?, ?B/s]Downloading (…)okenizer_config.json: 100%|██████████| 29.0/29.0 [00:00<00:00, 7.25kB/s]
+Downloading (…)lve/main/config.json:   0%|          | 0.00/570 [00:00<?, ?B/s]Downloading (…)lve/main/config.json: 100%|██████████| 570/570 [00:00<00:00, 347kB/s]
+Downloading (…)solve/main/vocab.txt:   0%|          | 0.00/213k [00:00<?, ?B/s]Downloading (…)solve/main/vocab.txt: 100%|██████████| 213k/213k [00:00<00:00, 14.7MB/s]
+Downloading (…)/main/tokenizer.json:   0%|          | 0.00/436k [00:00<?, ?B/s]Downloading (…)/main/tokenizer.json: 100%|██████████| 436k/436k [00:00<00:00, 22.7MB/s]
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Downloading pytorch_model.bin:   0%|          | 0.00/436M [00:00<?, ?B/s]Downloading pytorch_model.bin:   2%|▏         | 10.5M/436M [00:00<00:24, 17.3MB/s]Downloading pytorch_model.bin:   5%|▍         | 21.0M/436M [00:00<00:14, 28.0MB/s]Downloading pytorch_model.bin:   7%|▋         | 31.5M/436M [00:00<00:10, 39.4MB/s]Downloading pytorch_model.bin:  10%|▉         | 41.9M/436M [00:01<00:07, 52.3MB/s]Downloading pytorch_model.bin:  12%|█▏        | 52.4M/436M [00:01<00:06, 63.0MB/s]Downloading pytorch_model.bin:  14%|█▍        | 62.9M/436M [00:01<00:05, 71.5MB/s]Downloading pytorch_model.bin:  17%|█▋        | 73.4M/436M [00:01<00:04, 78.6MB/s]Downloading pytorch_model.bin:  19%|█▉        | 83.9M/436M [00:01<00:04, 84.0MB/s]Downloading pytorch_model.bin:  22%|██▏       | 94.4M/436M [00:01<00:03, 88.5MB/s]Downloading pytorch_model.bin:  24%|██▍       | 105M/436M [00:01<00:03, 89.5MB/s] Downloading pytorch_model.bin:  26%|██▋       | 115M/436M [00:01<00:03, 93.1MB/s]Downloading pytorch_model.bin:  29%|██▉       | 126M/436M [00:01<00:03, 96.2MB/s]Downloading pytorch_model.bin:  31%|███▏      | 136M/436M [00:02<00:03, 98.5MB/s]Downloading pytorch_model.bin:  36%|███▌      | 157M/436M [00:02<00:02, 102MB/s] Downloading pytorch_model.bin:  41%|████      | 178M/436M [00:02<00:02, 104MB/s]Downloading pytorch_model.bin:  46%|████▌     | 199M/436M [00:02<00:02, 106MB/s]Downloading pytorch_model.bin:  51%|█████     | 220M/436M [00:02<00:02, 107MB/s]Downloading pytorch_model.bin:  55%|█████▌    | 241M/436M [00:02<00:01, 108MB/s]Downloading pytorch_model.bin:  60%|██████    | 262M/436M [00:03<00:01, 108MB/s]Downloading pytorch_model.bin:  65%|██████▍   | 283M/436M [00:03<00:01, 109MB/s]Downloading pytorch_model.bin:  70%|██████▉   | 304M/436M [00:03<00:01, 110MB/s]Downloading pytorch_model.bin:  75%|███████▍  | 325M/436M [00:03<00:01, 109MB/s]Downloading pytorch_model.bin:  79%|███████▉  | 346M/436M [00:03<00:00, 110MB/s]Downloading pytorch_model.bin:  84%|████████▍ | 367M/436M [00:04<00:00, 110MB/s]Downloading pytorch_model.bin:  89%|████████▉ | 388M/436M [00:04<00:00, 111MB/s]Downloading pytorch_model.bin:  94%|█████████▍| 409M/436M [00:04<00:00, 111MB/s]Downloading pytorch_model.bin:  99%|█████████▊| 430M/436M [00:04<00:00, 112MB/s]Downloading pytorch_model.bin: 100%|██████████| 436M/436M [00:04<00:00, 92.1MB/s]
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.decoder.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Moving model to device ...cuda
+ >>>>>>>>  Starting training ... 
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy=0.607125
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy=0.614125
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy=0.6125
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy=0.614875
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy=0.618125
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+torch.cuda.memory_allocated: 0.825549GB
+torch.cuda.memory_reserved: 6.939453GB
+torch.cuda.max_memory_reserved: 6.939453GB
+Mon Mar 13 01:40:24 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.56       Driver Version: 460.56       CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Graphics Device     On   | 00000000:17:00.0 Off |                   On |
+| N/A   59C    P0   310W / 300W |  54507MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   1  Graphics Device     On   | 00000000:31:00.0 Off |                   On |
+| N/A   62C    P0   310W / 300W |  54309MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   2  Graphics Device     On   | 00000000:B1:00.0 Off |                   On |
+| N/A   58C    P0   293W / 300W |  38953MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   3  Graphics Device     On   | 00000000:CA:00.0 Off |                   On |
+| N/A   38C    P0   134W / 300W |  15476MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| MIG devices:                                                                |
++------------------+----------------------+-----------+-----------------------+
+| GPU  GI  CI  MIG |         Memory-Usage |        Vol|         Shared        |
+|      ID  ID  Dev |           BAR1-Usage | SM     Unc| CE  ENC  DEC  OFA  JPG|
+|                  |                      |        ECC|                       |
+|==================+======================+===========+=======================|
+|  0    8   0   0  |   8028MiB /  9728MiB | 14      0 |  1   0    0    0    0 |
+|                  |      4MiB / 16383MiB |           |                       |
++------------------+----------------------+-----------+-----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0    8    0      63857      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1    8    0        607      C   ...jeefzx3kp5jqdu/bin/python     8047MiB |
+|    1   13    0        832      C   ...jeefzx3kp5jqdu/bin/python     8047MiB |
+|    1   11    0        834      C   ...jeefzx3kp5jqdu/bin/python     8047MiB |
+|    1    9    0        836      C   ...jeefzx3kp5jqdu/bin/python     8047MiB |
+|    1   12    0       1150      C   ...jeefzx3kp5jqdu/bin/python     4461MiB |
+|    1   10    0      10051      C   ...sification_env/bin/python     9577MiB |
+|    1    7    0      64947      C   ...jeefzx3kp5jqdu/bin/python     8047MiB |
+|    2   11    0        429      C   ...jeefzx3kp5jqdu/bin/python     4461MiB |
+|    2    8    0        994      C   ...jeefzx3kp5jqdu/bin/python     8047MiB |
+|    2    7    0      62408      C   ...jeefzx3kp5jqdu/bin/python     9561MiB |
+|    2    9    0      62599      C   ...jeefzx3kp5jqdu/bin/python     7345MiB |
+|    2   13    0      63680      C   ...sification_env/bin/python     4753MiB |
+|    2   10    0      64498      C   ...jeefzx3kp5jqdu/bin/python     4753MiB |
+|    3    7    0        992      C   ...jeefzx3kp5jqdu/bin/python     8047MiB |
+|    3    8    0       1245      C   ...jeefzx3kp5jqdu/bin/python     7409MiB |
++-----------------------------------------------------------------------------+
+
+ - Average DEV metrics: accuracy={'accuracy': 0.6217125382262997}
+ - Average TEST metrics: accuracy={'accuracy': 0.6348983882270498}
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: train_accuracy ▁▅▄▆█
+wandb:   val_accuracy ▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: train_accuracy 0.61813
+wandb:   val_accuracy 0.62171
+wandb: 
+wandb: 🚀 View run bert-base-cased_grid_search at: https://wandb.ai/jacky291/boolq/runs/9i8eoo04
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230313_011410-9i8eoo04/logs
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Currently logged in as: jc200108 (jacky291). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.13.11
+wandb: Run data is saved locally in /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_014133-8lsgdwmt
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run bert-base-cased_grid_search
+wandb: ⭐️ View project at https://wandb.ai/jacky291/boolq
+wandb: 🚀 View run at https://wandb.ai/jacky291/boolq/runs/8lsgdwmt
+Found cached dataset boolq (/home/jchen291/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Specified arguments: Namespace(batch_size=32, device='cuda', experiment='bert-base-cased_grid_search', lr=0.0001, model='bert-base-cased', num_epochs=7, small_subset=False)
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 679.18it/s]
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Starting training ... 
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy=0.608875
+ - Average validation metrics: accuracy={'accuracy': 0.608868501529052}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy=0.61325
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy=0.616625
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy=0.62225
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy=0.61975
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 6 training:
+ ===> Epoch 6
+ - Average training metrics: accuracy=0.622125
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 7 training:
+ ===> Epoch 7
+ - Average training metrics: accuracy=0.623
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+torch.cuda.memory_allocated: 0.825549GB
+torch.cuda.memory_reserved: 6.939453GB
+torch.cuda.max_memory_reserved: 6.939453GB
+Mon Mar 13 02:17:47 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.56       Driver Version: 460.56       CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Graphics Device     On   | 00000000:17:00.0 Off |                   On |
+| N/A   56C    P0   225W / 300W |  29432MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   1  Graphics Device     On   | 00000000:31:00.0 Off |                   On |
+| N/A   50C    P0   183W / 300W |  24992MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   2  Graphics Device     On   | 00000000:B1:00.0 Off |                   On |
+| N/A   59C    P0   253W / 300W |  34489MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   3  Graphics Device     On   | 00000000:CA:00.0 Off |                   On |
+| N/A   41C    P0   135W / 300W |  16362MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| MIG devices:                                                                |
++------------------+----------------------+-----------+-----------------------+
+| GPU  GI  CI  MIG |         Memory-Usage |        Vol|         Shared        |
+|      ID  ID  Dev |           BAR1-Usage | SM     Unc| CE  ENC  DEC  OFA  JPG|
+|                  |                      |        ECC|                       |
+|==================+======================+===========+=======================|
+|  0    8   0   0  |   8028MiB /  9728MiB | 14      0 |  1   0    0    0    0 |
+|                  |      4MiB / 16383MiB |           |                       |
++------------------+----------------------+-----------+-----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0    8    0       2239      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1   13    0        832      C   ...jeefzx3kp5jqdu/bin/python     8047MiB |
+|    1    7    0       3520      C   ...jeefzx3kp5jqdu/bin/python     7345MiB |
+|    1   10    0      10051      C   ...sification_env/bin/python     9577MiB |
+|    2    8    0        994      C   ...jeefzx3kp5jqdu/bin/python     8047MiB |
+|    2   10    0       4602      C   ...jeefzx3kp5jqdu/bin/python     4753MiB |
+|    2    7    0      62408      C   ...jeefzx3kp5jqdu/bin/python     9561MiB |
+|    2    9    0      62599      C   ...jeefzx3kp5jqdu/bin/python     7345MiB |
+|    2   13    0      63680      C   ...sification_env/bin/python     4753MiB |
+|    3    7    0        992      C   ...jeefzx3kp5jqdu/bin/python     8047MiB |
+|    3    8    0       1245      C   ...jeefzx3kp5jqdu/bin/python     8295MiB |
++-----------------------------------------------------------------------------+
+
+ - Average DEV metrics: accuracy={'accuracy': 0.6217125382262997}
+ - Average TEST metrics: accuracy={'accuracy': 0.6187806587245971}
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.008 MB of 0.008 MB uploaded (0.000 MB deduped)wandb: \ 0.008 MB of 0.020 MB uploaded (0.000 MB deduped)wandb: 
+wandb: Run history:
+wandb: train_accuracy ▁▃▅█▆██
+wandb:   val_accuracy ▁██████
+wandb: 
+wandb: Run summary:
+wandb: train_accuracy 0.623
+wandb:   val_accuracy 0.62171
+wandb: 
+wandb: 🚀 View run bert-base-cased_grid_search at: https://wandb.ai/jacky291/boolq/runs/8lsgdwmt
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230313_014133-8lsgdwmt/logs
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Currently logged in as: jc200108 (jacky291). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.13.11
+wandb: Run data is saved locally in /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_021851-22t7smmj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run bert-base-cased_grid_search
+wandb: ⭐️ View project at https://wandb.ai/jacky291/boolq
+wandb: 🚀 View run at https://wandb.ai/jacky291/boolq/runs/22t7smmj
+Found cached dataset boolq (/home/jchen291/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Specified arguments: Namespace(batch_size=32, device='cuda', experiment='bert-base-cased_grid_search', lr=0.0001, model='bert-base-cased', num_epochs=9, small_subset=False)
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 687.42it/s]
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertForSequenceClassification: ['cls.predictions.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Starting training ... 
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy=0.60275
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy=0.607125
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy=0.609375
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy=0.609
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy=0.611875
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 6 training:
+ ===> Epoch 6
+ - Average training metrics: accuracy=0.606625
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 7 training:
+ ===> Epoch 7
+ - Average training metrics: accuracy=0.61275
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 8 training:
+ ===> Epoch 8
+ - Average training metrics: accuracy=0.61825
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 9 training:
+ ===> Epoch 9
+ - Average training metrics: accuracy=0.61875
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+torch.cuda.memory_allocated: 0.825549GB
+torch.cuda.memory_reserved: 6.939453GB
+torch.cuda.max_memory_reserved: 6.939453GB
+Mon Mar 13 03:05:18 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.56       Driver Version: 460.56       CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Graphics Device     On   | 00000000:17:00.0 Off |                   On |
+| N/A   59C    P0   275W / 300W |  51527MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   1  Graphics Device     On   | 00000000:31:00.0 Off |                   On |
+| N/A   62C    P0   292W / 300W |  57073MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   2  Graphics Device     On   | 00000000:B1:00.0 Off |                   On |
+| N/A   45C    P0   168W / 300W |  21252MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   3  Graphics Device     On   | 00000000:CA:00.0 Off |                   On |
+| N/A   34C    P0   101W / 300W |   8311MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| MIG devices:                                                                |
++------------------+----------------------+-----------+-----------------------+
+| GPU  GI  CI  MIG |         Memory-Usage |        Vol|         Shared        |
+|      ID  ID  Dev |           BAR1-Usage | SM     Unc| CE  ENC  DEC  OFA  JPG|
+|                  |                      |        ECC|                       |
+|==================+======================+===========+=======================|
+|  0    8   0   0  |   8028MiB /  9728MiB | 14      0 |  1   0    0    0    0 |
+|                  |      4MiB / 16383MiB |           |                       |
++------------------+----------------------+-----------+-----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0    8    0       6201      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1    7    0       3520      C   ...jeefzx3kp5jqdu/bin/python     7345MiB |
+|    1    8    0       8935      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1    9    0       9196      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1   11    0       9198      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1   12    0       9200      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1   13    0       9309      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1   10    0      10051      C   ...sification_env/bin/python     9577MiB |
+|    2    8    0       9465      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    2    9    0       9467      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    2   10    0      10704      C   ...jeefzx3kp5jqdu/bin/python     5183MiB |
+|    3    8    0       1245      C   ...jeefzx3kp5jqdu/bin/python     8295MiB |
++-----------------------------------------------------------------------------+
+
+ - Average DEV metrics: accuracy={'accuracy': 0.6217125382262997}
+ - Average TEST metrics: accuracy={'accuracy': 0.626489138051857}
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.008 MB of 0.020 MB uploaded (0.000 MB deduped)wandb: 
+wandb: Run history:
+wandb: train_accuracy ▁▃▄▄▅▃▅██
+wandb:   val_accuracy ▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: train_accuracy 0.61875
+wandb:   val_accuracy 0.62171
+wandb: 
+wandb: 🚀 View run bert-base-cased_grid_search at: https://wandb.ai/jacky291/boolq/runs/22t7smmj
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230313_021851-22t7smmj/logs
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Currently logged in as: jc200108 (jacky291). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.13.11
+wandb: Run data is saved locally in /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_030622-n9nyuqp1
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run bert-base-cased_grid_search
+wandb: ⭐️ View project at https://wandb.ai/jacky291/boolq
+wandb: 🚀 View run at https://wandb.ai/jacky291/boolq/runs/n9nyuqp1
+Found cached dataset boolq (/home/jchen291/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Specified arguments: Namespace(batch_size=32, device='cuda', experiment='bert-base-cased_grid_search', lr=0.0005, model='bert-base-cased', num_epochs=5, small_subset=False)
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 685.46it/s]
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertForSequenceClassification: ['cls.seq_relationship.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Starting training ... 
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy=0.59625
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy=0.599625
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy=0.6055
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy=0.6155
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy=0.61925
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+torch.cuda.memory_allocated: 0.825549GB
+torch.cuda.memory_reserved: 6.939453GB
+torch.cuda.max_memory_reserved: 6.939453GB
+Mon Mar 13 03:32:11 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.56       Driver Version: 460.56       CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Graphics Device     On   | 00000000:17:00.0 Off |                   On |
+| N/A   58C    P0   219W / 300W |  35475MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   1  Graphics Device     On   | 00000000:31:00.0 Off |                   On |
+| N/A   50C    P0   181W / 300W |  24968MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   2  Graphics Device     On   | 00000000:B1:00.0 Off |                   On |
+| N/A   49C    P0   181W / 300W |  23414MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   3  Graphics Device     On   | 00000000:CA:00.0 Off |                   On |
+| N/A   36C    P0   100W / 300W |   8311MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| MIG devices:                                                                |
++------------------+----------------------+-----------+-----------------------+
+| GPU  GI  CI  MIG |         Memory-Usage |        Vol|         Shared        |
+|      ID  ID  Dev |           BAR1-Usage | SM     Unc| CE  ENC  DEC  OFA  JPG|
+|                  |                      |        ECC|                       |
+|==================+======================+===========+=======================|
+|  0    8   0   0  |   8028MiB /  9728MiB | 14      0 |  1   0    0    0    0 |
+|                  |      4MiB / 16383MiB |           |                       |
++------------------+----------------------+-----------+-----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0    8    0      11126      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1    7    0       3520      C   ...jeefzx3kp5jqdu/bin/python     7345MiB |
+|    1   13    0       9309      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1   10    0      10051      C   ...sification_env/bin/python     9577MiB |
+|    2    8    0       9465      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    2    9    0       9467      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    2   10    0      12081      C   ...jeefzx3kp5jqdu/bin/python     7345MiB |
+|    3    8    0       1245      C   ...jeefzx3kp5jqdu/bin/python     8295MiB |
++-----------------------------------------------------------------------------+
+
+ - Average DEV metrics: accuracy={'accuracy': 0.6217125382262997}
+ - Average TEST metrics: accuracy={'accuracy': 0.6306937631394534}
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: train_accuracy ▁▂▄▇█
+wandb:   val_accuracy ▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: train_accuracy 0.61925
+wandb:   val_accuracy 0.62171
+wandb: 
+wandb: 🚀 View run bert-base-cased_grid_search at: https://wandb.ai/jacky291/boolq/runs/n9nyuqp1
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230313_030622-n9nyuqp1/logs
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Currently logged in as: jc200108 (jacky291). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.13.11
+wandb: Run data is saved locally in /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_033317-emfzhxhu
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run bert-base-cased_grid_search
+wandb: ⭐️ View project at https://wandb.ai/jacky291/boolq
+wandb: 🚀 View run at https://wandb.ai/jacky291/boolq/runs/emfzhxhu
+Found cached dataset boolq (/home/jchen291/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Specified arguments: Namespace(batch_size=32, device='cuda', experiment='bert-base-cased_grid_search', lr=0.0005, model='bert-base-cased', num_epochs=7, small_subset=False)
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 670.61it/s]
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Starting training ... 
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy=0.59475
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy=0.608375
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy=0.609125
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy=0.615375
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy=0.617
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 6 training:
+ ===> Epoch 6
+ - Average training metrics: accuracy=0.6185
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 7 training:
+ ===> Epoch 7
+ - Average training metrics: accuracy=0.6195
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+torch.cuda.memory_allocated: 0.825549GB
+torch.cuda.memory_reserved: 6.939453GB
+torch.cuda.max_memory_reserved: 6.939453GB
+Mon Mar 13 04:09:13 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.56       Driver Version: 460.56       CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Graphics Device     On   | 00000000:17:00.0 Off |                   On |
+| N/A   55C    P0   187W / 300W |  31010MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   1  Graphics Device     On   | 00000000:31:00.0 Off |                   On |
+| N/A   45C    P0   135W / 300W |  16942MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   2  Graphics Device     On   | 00000000:B1:00.0 Off |                   On |
+| N/A   29C    P0    41W / 300W |     13MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   3  Graphics Device     On   | 00000000:CA:00.0 Off |                   On |
+| N/A   29C    P0    43W / 300W |     13MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| MIG devices:                                                                |
++------------------+----------------------+-----------+-----------------------+
+| GPU  GI  CI  MIG |         Memory-Usage |        Vol|         Shared        |
+|      ID  ID  Dev |           BAR1-Usage | SM     Unc| CE  ENC  DEC  OFA  JPG|
+|                  |                      |        ECC|                       |
+|==================+======================+===========+=======================|
+|  0    8   0   0  |   8028MiB /  9728MiB | 14      0 |  1   0    0    0    0 |
+|                  |      4MiB / 16383MiB |           |                       |
++------------------+----------------------+-----------+-----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0    8    0      13489      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1    7    0       3520      C   ...jeefzx3kp5jqdu/bin/python     7345MiB |
+|    1   10    0      10051      C   ...sification_env/bin/python     9577MiB |
++-----------------------------------------------------------------------------+
+
+ - Average DEV metrics: accuracy={'accuracy': 0.6217125382262997}
+ - Average TEST metrics: accuracy={'accuracy': 0.6180798878766643}
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb: train_accuracy ▁▅▅▇▇██
+wandb:   val_accuracy ▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: train_accuracy 0.6195
+wandb:   val_accuracy 0.62171
+wandb: 
+wandb: 🚀 View run bert-base-cased_grid_search at: https://wandb.ai/jacky291/boolq/runs/emfzhxhu
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230313_033317-emfzhxhu/logs
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Currently logged in as: jc200108 (jacky291). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.13.11
+wandb: Run data is saved locally in /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_041018-v1f9ykh2
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run bert-base-cased_grid_search
+wandb: ⭐️ View project at https://wandb.ai/jacky291/boolq
+wandb: 🚀 View run at https://wandb.ai/jacky291/boolq/runs/v1f9ykh2
+Found cached dataset boolq (/home/jchen291/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Specified arguments: Namespace(batch_size=32, device='cuda', experiment='bert-base-cased_grid_search', lr=0.0005, model='bert-base-cased', num_epochs=9, small_subset=False)
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 689.29it/s]
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Starting training ... 
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy=0.603125
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy=0.605375
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy=0.605625
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy=0.607125
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy=0.61325
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 6 training:
+ ===> Epoch 6
+ - Average training metrics: accuracy=0.613625
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 7 training:
+ ===> Epoch 7
+ - Average training metrics: accuracy=0.61875
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 8 training:
+ ===> Epoch 8
+ - Average training metrics: accuracy=0.619625
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+Epoch 9 training:
+ ===> Epoch 9
+ - Average training metrics: accuracy=0.62275
+ - Average validation metrics: accuracy={'accuracy': 0.6217125382262997}
+torch.cuda.memory_allocated: 0.825549GB
+torch.cuda.memory_reserved: 6.939453GB
+torch.cuda.max_memory_reserved: 6.939453GB
+Mon Mar 13 04:56:13 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.56       Driver Version: 460.56       CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Graphics Device     On   | 00000000:17:00.0 Off |                   On |
+| N/A   47C    P0   112W / 300W |  16314MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   1  Graphics Device     On   | 00000000:31:00.0 Off |                   On |
+| N/A   42C    P0   102W / 300W |   9593MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   2  Graphics Device     On   | 00000000:B1:00.0 Off |                   On |
+| N/A   30C    P0    41W / 300W |     13MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   3  Graphics Device     On   | 00000000:CA:00.0 Off |                   On |
+| N/A   30C    P0    44W / 300W |     13MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| MIG devices:                                                                |
++------------------+----------------------+-----------+-----------------------+
+| GPU  GI  CI  MIG |         Memory-Usage |        Vol|         Shared        |
+|      ID  ID  Dev |           BAR1-Usage | SM     Unc| CE  ENC  DEC  OFA  JPG|
+|                  |                      |        ECC|                       |
+|==================+======================+===========+=======================|
+|  0    8   0   0  |   8028MiB /  9728MiB | 14      0 |  1   0    0    0    0 |
+|                  |      4MiB / 16383MiB |           |                       |
++------------------+----------------------+-----------+-----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0    8    0      16562      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1   10    0      10051      C   ...sification_env/bin/python     9577MiB |
++-----------------------------------------------------------------------------+
+
+ - Average DEV metrics: accuracy={'accuracy': 0.6217125382262997}
+ - Average TEST metrics: accuracy={'accuracy': 0.6117729502452698}
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.008 MB of 0.008 MB uploaded (0.000 MB deduped)wandb: \ 0.008 MB of 0.019 MB uploaded (0.000 MB deduped)wandb: | 0.019 MB of 0.019 MB uploaded (0.000 MB deduped)wandb: 
+wandb: Run history:
+wandb: train_accuracy ▁▂▂▂▅▅▇▇█
+wandb:   val_accuracy ▁▁▁▁▁▁▁▁▁
+wandb: 
+wandb: Run summary:
+wandb: train_accuracy 0.62275
+wandb:   val_accuracy 0.62171
+wandb: 
+wandb: 🚀 View run bert-base-cased_grid_search at: https://wandb.ai/jacky291/boolq/runs/v1f9ykh2
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230313_041018-v1f9ykh2/logs
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Currently logged in as: jc200108 (jacky291). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.13.11
+wandb: Run data is saved locally in /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_045718-hbjabqjg
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run bert-base-cased_grid_search
+wandb: ⭐️ View project at https://wandb.ai/jacky291/boolq
+wandb: 🚀 View run at https://wandb.ai/jacky291/boolq/runs/hbjabqjg
+Found cached dataset boolq (/home/jchen291/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Specified arguments: Namespace(batch_size=64, device='cuda', experiment='bert-base-cased_grid_search', lr=0.001, model='bert-base-cased', num_epochs=5, small_subset=False)
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 690.65it/s]
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Starting training ... 
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy=0.602125
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.008 MB of 0.008 MB uploaded (0.000 MB deduped)wandb: \ 0.008 MB of 0.018 MB uploaded (0.000 MB deduped)wandb: | 0.018 MB of 0.018 MB uploaded (0.000 MB deduped)wandb: 🚀 View run bert-base-cased_grid_search at: https://wandb.ai/jacky291/boolq/runs/hbjabqjg
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230313_045718-hbjabqjg/logs
+Traceback (most recent call last):
+  File "classification.py", line 289, in <module>
+    train(pretrained_model,args.num_epochs,train_dataloader,validation_dataloader,args.device,args.lr)
+  File "classification.py", line 183, in train
+    val_accuracy = evaluate_model(mymodel, validation_dataloader, device)
+  File "classification.py", line 95, in evaluate_model
+    output = model(input_ids=input_ids, attention_mask=attention_mask)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 1563, in forward
+    outputs = self.bert(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 1019, in forward
+    encoder_outputs = self.encoder(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 609, in forward
+    layer_outputs = layer_module(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 537, in forward
+    layer_output = apply_chunking_to_forward(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/pytorch_utils.py", line 249, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 550, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 464, in forward
+    hidden_states = self.LayerNorm(hidden_states + input_tensor)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/normalization.py", line 190, in forward
+    return F.layer_norm(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/functional.py", line 2515, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB (GPU 0; 9.50 GiB total capacity; 8.46 GiB already allocated; 17.75 MiB free; 8.58 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: icgpu02: task 0: Exited with exit code 1
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Currently logged in as: jc200108 (jacky291). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.13.11
+wandb: Run data is saved locally in /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_050201-1kna5hin
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run bert-base-cased_grid_search
+wandb: ⭐️ View project at https://wandb.ai/jacky291/boolq
+wandb: 🚀 View run at https://wandb.ai/jacky291/boolq/runs/1kna5hin
+Found cached dataset boolq (/home/jchen291/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Specified arguments: Namespace(batch_size=64, device='cuda', experiment='bert-base-cased_grid_search', lr=0.0005, model='bert-base-cased', num_epochs=7, small_subset=False)
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 677.43it/s]
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.weight', 'cls.predictions.decoder.weight', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Starting training ... 
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy=0.59525
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.008 MB of 0.008 MB uploaded (0.000 MB deduped)wandb: \ 0.008 MB of 0.018 MB uploaded (0.000 MB deduped)wandb: | 0.018 MB of 0.018 MB uploaded (0.000 MB deduped)wandb: 🚀 View run bert-base-cased_grid_search at: https://wandb.ai/jacky291/boolq/runs/1kna5hin
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230313_050201-1kna5hin/logs
+Traceback (most recent call last):
+  File "classification.py", line 289, in <module>
+    train(pretrained_model,args.num_epochs,train_dataloader,validation_dataloader,args.device,args.lr)
+  File "classification.py", line 183, in train
+    val_accuracy = evaluate_model(mymodel, validation_dataloader, device)
+  File "classification.py", line 95, in evaluate_model
+    output = model(input_ids=input_ids, attention_mask=attention_mask)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 1563, in forward
+    outputs = self.bert(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 1019, in forward
+    encoder_outputs = self.encoder(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 609, in forward
+    layer_outputs = layer_module(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 537, in forward
+    layer_output = apply_chunking_to_forward(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/pytorch_utils.py", line 249, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 550, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 464, in forward
+    hidden_states = self.LayerNorm(hidden_states + input_tensor)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/normalization.py", line 190, in forward
+    return F.layer_norm(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/functional.py", line 2515, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB (GPU 0; 9.50 GiB total capacity; 8.46 GiB already allocated; 17.75 MiB free; 8.58 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: icgpu02: task 0: Exited with exit code 1
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Currently logged in as: jc200108 (jacky291). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.13.11
+wandb: Run data is saved locally in /home/jchen291/classes/csci-601-771-self-supervised-models/sp2023/hw6/wandb/run-20230313_050644-rhqxezxx
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run bert-base-cased_grid_search
+wandb: ⭐️ View project at https://wandb.ai/jacky291/boolq
+wandb: 🚀 View run at https://wandb.ai/jacky291/boolq/runs/rhqxezxx
+Found cached dataset boolq (/home/jchen291/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Specified arguments: Namespace(batch_size=64, device='cuda', experiment='bert-base-cased_grid_search', lr=0.0005, model='bert-base-cased', num_epochs=9, small_subset=False)
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 689.29it/s]
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Starting training ... 
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy=0.602875
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:795: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+/data/apps/linux-centos8-cascadelake/gcc-9.3.0/anaconda3-2020.07-i7qavhiohb2uwqs4eqjeefzx3kp5jqdu/lib/python3.8/site-packages/traitlets/config/loader.py:804: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if len(key) is 1:
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: - 0.008 MB of 0.008 MB uploaded (0.000 MB deduped)wandb: \ 0.008 MB of 0.018 MB uploaded (0.000 MB deduped)wandb: | 0.018 MB of 0.018 MB uploaded (0.000 MB deduped)wandb: 🚀 View run bert-base-cased_grid_search at: https://wandb.ai/jacky291/boolq/runs/rhqxezxx
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230313_050644-rhqxezxx/logs
+Traceback (most recent call last):
+  File "classification.py", line 289, in <module>
+    train(pretrained_model,args.num_epochs,train_dataloader,validation_dataloader,args.device,args.lr)
+  File "classification.py", line 183, in train
+    val_accuracy = evaluate_model(mymodel, validation_dataloader, device)
+  File "classification.py", line 95, in evaluate_model
+    output = model(input_ids=input_ids, attention_mask=attention_mask)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 1563, in forward
+    outputs = self.bert(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 1019, in forward
+    encoder_outputs = self.encoder(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 609, in forward
+    layer_outputs = layer_module(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 537, in forward
+    layer_output = apply_chunking_to_forward(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/pytorch_utils.py", line 249, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 550, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/transformers/models/bert/modeling_bert.py", line 464, in forward
+    hidden_states = self.LayerNorm(hidden_states + input_tensor)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/modules/normalization.py", line 190, in forward
+    return F.layer_norm(
+  File "/home/jchen291/.local/lib/python3.8/site-packages/torch/nn/functional.py", line 2515, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB (GPU 0; 9.50 GiB total capacity; 8.46 GiB already allocated; 17.75 MiB free; 8.58 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+srun: error: icgpu02: task 0: Exited with exit code 1
